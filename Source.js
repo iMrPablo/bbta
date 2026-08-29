@@ -4152,57 +4152,6 @@ const HTML_TEMPLATES = {
 					<span id="panel-version" class="text-xs px-2 py-0.5 font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 rounded-full"></span>
 				</h1>
 			<div class="flex items-center justify-center gap-3 w-full md:w-auto mt-2 md:mt-0">
-				<button id="pwa-install-btn" onclick="triggerPwaInstall()"
-				    class="w-9 h-9 rounded-full inline-flex items-center justify-center
-				           bg-gradient-to-r from-indigo-500 to-purple-500
-				           hover:from-indigo-600 hover:to-purple-600
-				           transition-all duration-300
-				           text-white shadow-md hover:shadow-lg hover:shadow-indigo-500/30 transform hover:scale-110 cursor-pointer border-none"
-				    title="دانلود و نصب اپلیکیشن پنل">
-				    <svg class="w-5 h-5 drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-				        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
-				    </svg>
-				</button>
-				
-				<button onclick="toggleSupportModal(true)"
-				    class="w-9 h-9 rounded-full inline-flex items-center justify-center
-				           bg-red-50 dark:bg-red-950/30
-				           border border-red-200 dark:border-red-900
-				           hover:bg-red-100 dark:hover:bg-red-900/50
-				           transition-all duration-200
-				           text-red-600 dark:text-red-400 shadow-sm"
-				    title="حمایت از ما">
-				    <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
-				        <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"/>
-				    </svg>
-				</button>
-				
-				<button onclick="toggleInfoModal(true)"
-				    class="w-9 h-9 rounded-full inline-flex items-center justify-center
-				           bg-purple-50 dark:bg-purple-950/30
-				           border border-purple-200 dark:border-purple-900
-				           hover:bg-purple-100 dark:hover:bg-purple-900/50
-				           transition-all duration-200
-				           text-purple-600 dark:text-purple-400 shadow-sm"
-				    title="اطلاعات">
-				    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-				        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-				    </svg>
-				</button>
-				
-				<button onclick="restartCore()"
-				    class="w-9 h-9 rounded-full inline-flex items-center justify-center
-				           bg-blue-50 dark:bg-blue-950/30
-				           border border-blue-200 dark:border-blue-900
-				           hover:bg-blue-100 dark:hover:bg-blue-900/50
-				           transition-all duration-200
-				           text-blue-600 dark:text-blue-400 shadow-sm"
-				    title="ری استارت پـنـل">
-				    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-				        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-				    </svg>
-				</button>
-				
 				<button id="theme-toggle"
 				    class="w-9 h-9 rounded-full inline-flex items-center justify-center
 				           bg-amber-50 dark:bg-amber-950/30
@@ -4217,21 +4166,6 @@ const HTML_TEMPLATES = {
 				    <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
 				    </svg>
-				</button>
-				
-				<button id="update-toggle" onclick="checkForUpdates(true)"
-				    class="w-9 h-9 rounded-full inline-flex items-center justify-center
-				           bg-green-50 dark:bg-green-950/30
-				           border border-green-200 dark:border-green-900
-				           hover:bg-green-100 dark:hover:bg-green-900/50
-				           transition-all duration-200
-				           text-green-700 dark:text-green-500
-				           relative shadow-sm"
-				    title="آپدیت">
-				    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-				        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path>
-				    </svg>
-				    <span id="update-badge" class="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-red-500 border-2 border-green-50 dark:border-green-900 rounded-full hidden animate-pulse"></span>
 				</button>
 				
 				<button onclick="toggleSettingsModal(true)"
