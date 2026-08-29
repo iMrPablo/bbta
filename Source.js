@@ -4151,29 +4151,6 @@ const HTML_TEMPLATES = {
 					⚡️ Zakaria Panel
 					<span id="panel-version" class="text-xs px-2 py-0.5 font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 rounded-full"></span>
 				</h1>
-				<div class="flex items-center gap-3 bg-gray-100 dark:bg-zinc-800/60 px-3 py-1.5 rounded-full border border-gray-200 dark:border-zinc-800/80 shadow-sm flex-shrink-0 w-fit">
-					<a href="https://github.com/panel-zeus/Z-E-U-S" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 transition-all transform hover:scale-125 duration-200 flex-shrink-0" title="GitHub">
-						<svg class="w-[22px] h-[22px] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-							<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-						</svg>
-					</a>
-					<a href="https://t.me/PANEL_ZAKARIA" target="_blank" rel="noopener noreferrer" class="text-sky-500 hover:text-sky-600 dark:hover:text-sky-400 transition-all transform hover:scale-125 duration-200 flex-shrink-0" title="Telegram">
-						<svg class="w-[22px] h-[22px] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-							<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.94-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.37.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .24z"/>
-						</svg>
-					</a>
-					<a href="https://t.me/ZEUS_PANEL_BOT" target="_blank" rel="noopener noreferrer" class="text-green-500 hover:text-green-600 dark:hover:text-green-400 transition-all transform hover:scale-125 duration-200 flex-shrink-0" title="Bot">
-						<svg class="w-[22px] h-[22px] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M12 8V4H8"/>
-							<rect width="16" height="12" x="4" y="8" rx="2"/>
-							<path d="M2 14h2"/>
-							<path d="M20 14h2"/>
-							<path d="M15 13v2"/>
-							<path d="M9 13v2"/>
-						</svg>
-					</a>
-				</div>
-			</div>
 			<div class="flex items-center justify-center gap-3 w-full md:w-auto mt-2 md:mt-0">
 				<button id="pwa-install-btn" onclick="triggerPwaInstall()"
 				    class="w-9 h-9 rounded-full inline-flex items-center justify-center
@@ -4476,50 +4453,6 @@ const HTML_TEMPLATES = {
 	</div>
 </div>
 <div id="info-modal" class="fixed inset-0 z-[80] flex items-center justify-center p-4 bg-black/60 opacity-0 pointer-events-none transition-all duration-300 ease-out">
-	<div class="w-full max-w-md bg-white dark:bg-amoled-card border border-purple-500/50 rounded-md shadow-2xl overflow-hidden p-6 text-center transition-all transform duration-300 opacity-0 scale-95 ease-out flex flex-col">
-		
-		<div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-500 mb-3 shadow-inner mx-auto flex-shrink-0">
-			<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-			</svg>
-		</div>
-		
-		<h3 class="font-black text-lg text-gray-900 dark:text-white mb-3">اطلاعیه مهم امنیتی و وضعیت پروژه</h3>
-		
-		<div class="text-xs text-gray-600 dark:text-gray-300 mb-4 leading-relaxed font-medium text-justify space-y-2">
-			<p>
-				همراهان گرامی؛ با وجود مسدود شدن مکرر مخازن گیت‌هاب زئوس بر اثر گزارش‌های کذب و مغرضانه <strong>فروشندگان کانفیگ</strong>، ما مخزن جدیدی را برای دسترسی شما ایجاد کرده‌ایم؛ هرچند متاسفانه احتمال مسدود شدن مجدد آن همچنان وجود دارد.
-			</p>
-			<p>
-				این افراد سودجو با انتشار شایعات بی‌اساس مبنی بر ناامن بودن پنل، در تلاشند تا این پروژه کاملاً رایگان را تخریب کنند و منافع مالی خود را نجات دهند. اما ما تسلیم این کارشکنی‌ها نخواهیم شد.
-			</p>
-			<p>
-				پروژه زئوس همواره بر پایه شفافیت مطلق بنا شده است. سورس‌کد کامل در اختیار شماست تا بتوانید مستقلاً و حتی به کمک ابزارهای هوش مصنوعی آن را بررسی کرده و از سلامت و امنیت قطعی پروژه اطمینان حاصل کنید.
-			</p>
-			<p class="text-amber-600 dark:text-amber-400 font-bold text-center mt-2 border-t border-gray-100 dark:border-zinc-800/50 pt-2.5">
-				ادامه این مسیر پرفراز و نشیب و مقابله با این تخریب‌های سازمان‌یافته، بدون همراهی شما دشوار است. حمایت‌های شما، تنها پشتوانه ما برای زنده نگه داشتن زئوس است.
-			</p>
-		</div>
-		
-		<div class="flex flex-col gap-2 mt-auto">
-			<div class="flex flex-col sm:flex-row gap-2 w-full">
-				<button onclick="downloadZeusSource()" class="flex-1 py-2 bg-transparent border-2 border-blue-600 text-blue-700 hover:bg-blue-900/20 hover:text-blue-800 dark:border-blue-500 dark:text-blue-400 dark:hover:bg-blue-900/40 dark:hover:text-blue-300 font-bold rounded-md text-[11px] transition duration-300 shadow-sm flex items-center justify-center gap-1.5">
-					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-					دریافت سورس‌کد
-				</button>
-				
-				<button onclick="window.open('https://donatonion.ir-netlify.workers.dev/', '_blank')" class="flex-1 py-2 bg-transparent border-2 border-green-600 text-green-700 hover:bg-green-900/20 hover:text-green-800 dark:border-green-500 dark:text-green-400 dark:hover:bg-green-900/40 dark:hover:text-green-300 font-bold rounded-md text-[11px] transition duration-300 shadow-sm flex items-center justify-center gap-1.5">
-					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-					حمایت از پروژه
-				</button>
-			</div>
-			
-			<button onclick="toggleInfoModal(false)" class="w-full py-2.5 bg-transparent border-2 border-purple-600 text-purple-700 hover:bg-purple-900/20 hover:text-purple-800 dark:border-purple-500 dark:text-purple-400 dark:hover:bg-purple-900/40 dark:hover:text-purple-300 font-black rounded-md text-sm transition duration-300 shadow-sm">
-				متوجه شدم
-			</button>
-		</div>
-		
-	</div>
 </div>
 <div id="usage-warning-modal" class="fixed inset-0 z-[80] flex items-center justify-center p-4 bg-black/60  opacity-0 pointer-events-none transition-all duration-300 ease-out">
 	<div class="w-full max-w-md bg-white dark:bg-amoled-card border border-orange-500/50 rounded-md shadow-2xl overflow-hidden p-6 text-center transition-all transform duration-300 opacity-0 scale-95 ease-out">
