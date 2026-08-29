@@ -384,7 +384,7 @@ export default {
 			if (url.pathname.startsWith("/api/")) {
 				return await Router.handleApi(request, url, env, ctx);
 			}
-			if (url.pathname === PANEL_PATH || url.pathname === "/login") {
+			if (url.pathname === "/panel" || url.pathname === "/login") {
 				return await Router.handlePanel(request, env);
 			}
 			if (url.pathname.startsWith("/status/")) {
@@ -434,15 +434,11 @@ const ZEUS_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 
     <path d="M13 10V3L4 14h7v7l9-11h-7z" fill="#38bdf8" fill-opacity="0.3" stroke="#60a5fa" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </svg>`;
-const PANEL_PATH = '/5RwRlf17J8oQ';
-const API_UPDATE_PATH = '/api-p0IqF03caH';
-const COOKIE_NAME = 'KMgRhDN70IBomgSW_session';
-const DB_KEY_PASSWORD = 'CBlQWOWSHEAQ_password';
 const PWA_MANIFEST = JSON.stringify({
-	name: "Cn6RujJstN Panel",
-	short_name: "Cn6RujJstN Panel",
+	name: "Zakaria Panel",
+	short_name: "Zakaria Panel",
 	description: "پنل مدیریت پیشرفته کانفیگ و کاربران زکریا",
-	start_url: PANEL_PATH,
+	start_url: "/panel",
 	scope: "/",
 	display: "standalone",
 	background_color: "#000000",
