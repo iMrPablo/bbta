@@ -8587,11 +8587,7 @@ function applySelectedIps() {
 			}
 			window.startRefreshInterval(initialRate);
 			checkAutoUpdateSetup().then(() => {
-				setTimeout(() => checkForUpdates(false), 1000);
 			});
-			setInterval(() => {
-				if (!document.hidden) checkForUpdates(false);
-			}, 300000);
 			setTimeout(() => checkGlobalMessage(), 3000);
 			setInterval(() => {
 				if (!document.hidden) checkGlobalMessage();
