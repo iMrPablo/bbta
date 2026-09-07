@@ -1527,8 +1527,7 @@ const SubscriptionService = {
 		if (_qbL !== 0) return new Response(JSON.stringify({ error: "Queue batching limit exceeded. Please lower batch size or check Cloudflare limits." }), { status: 429 });
 		const m1 = decodeURIComponent("%E2%9A%A0%EF%B8%8F%D9%BE%D9%86%D9%84%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%88%20%D8%BA%DB%8C%D8%B1%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%81%D8%B1%D9%88%D8%B4%E2%9A%A0%EF%B8%8F") + (_SECURITY_CORE ? "" : "_ERR");
 		const m2 = decodeURIComponent("%F0%9F%9A%80%40PANEL_ZEUS%20%D8%B3%D8%A7%D8%AE%D8%AA%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%F0%9F%9A%80");
-		links.push("vl" + "e" + "ss://" + user.uuid + "@0.0.0.0:1?encryption=none&security=none&type=ws&host=" + host + "&path=" + dynPath + "#" + encodeURIComponent(m1));
-		links.push("vl" + "e" + "ss://" + user.uuid + "@0.0.0.0:1?encryption=none&security=none&type=ws&host=" + host + "&path=" + dynPath + "#" + encodeURIComponent(m2));
+		
 		let remVol = "Unlimited";
 		if (user.limit_gb) {
 			let liveUsedGb = (user.used_gb || 0) + ((GLOBAL_TRAFFIC_CACHE.get(user.username) || 0) / (1024 * 1024 * 1024));
@@ -1666,11 +1665,11 @@ links.push("vl" + "e" + "ss://" + user.uuid + "@0.0.0.0:1?encryption=none&securi
 					const tlsParams = isTlsPort ? ("&insecure=0&fp=" + fp + "&allowInsecure=0&sni=" + host) : "";
 
 					if (enableVless) {
-						const remark = "ZEUS | " + proxy.flagEmoji + " | " + user.username;
+						const remark = "Tond| " + proxy.flagEmoji + " | " + user.username;
 						links.push("vl" + "e" + "ss://" + user.uuid + "@" + ip + ":" + portStr + "?path=" + proxy.currentDynPath + "&security=" + tlsVal + "&encryption=none&host=" + host + "&type=ws" + tlsParams + userFrag + "#" + encodeURIComponent(remark));
 					}
 					if (enableTrojan) {
-						const trojanRemark = "ZEUS | " + proxy.flagEmoji + " | " + user.username;
+						const trojanRemark = "Tond| " + proxy.flagEmoji + " | " + user.username;
 						links.push("trojan://" + user.uuid + "@" + ip + ":" + portStr + "?path=" + proxy.currentDynPath + "&security=" + tlsVal + "&host=" + host + "&type=ws" + tlsParams + userFrag + "#" + encodeURIComponent(trojanRemark));
 					}
 				});
@@ -8261,8 +8260,7 @@ function downloadZeusSource() {
 			const links = [];
 		const m1 = decodeURIComponent('%E2%9A%A0%EF%B8%8F%D9%BE%D9%86%D9%84%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%88%20%D8%BA%DB%8C%D8%B1%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%81%D8%B1%D9%88%D8%B4%E2%9A%A0%EF%B8%8F');
 		const m2 = decodeURIComponent('%F0%9F%9A%80%40PANEL_ZEUS%20%D8%B3%D8%A7%D8%AE%D8%AA%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%F0%9F%9A%80');
-		links.push('vle' + 'ss://' + (user.uuid || '') + '@0.0.0.0:1?encryption=none&security=none&type=ws&host=' + host + '&path=' + dynPath + '#' + encodeURIComponent(m1));
-		links.push('vle' + 'ss://' + (user.uuid || '') + '@0.0.0.0:1?encryption=none&security=none&type=ws&host=' + host + '&path=' + dynPath + '#' + encodeURIComponent(m2));
+		
 			let remVol = "Unlimited";
 			if (user.limit_gb) {
 				let rem = user.limit_gb - (user.used_gb || 0);
@@ -8337,11 +8335,11 @@ links.push('vle' + 'ss://' + (user.uuid || '') + '@0.0.0.0:1?encryption=none&sec
 						const tlsParams = isTlsPort ? ("&insecure=0&fp=" + fp + "&allowInsecure=0&sni=" + host) : "";
 
 						if (enableVless) {
-							const remark = "ZEUS | " + proxy.flagEmoji + " | " + user.username;
+							const remark = "Tond| " + proxy.flagEmoji + " | " + user.username;
 							links.push('vle' + 'ss://' + (user.uuid || '') + '@' + ip + ':' + portStr + '?path=' + proxy.currentDynPath + '&security=' + tlsVal + '&encryption=none&host=' + host + '&type=ws' + tlsParams + userFrag + '#' + encodeURIComponent(remark));
 						}
 						if (enableTrojan) {
-							const trojanRemark = "ZEUS | " + proxy.flagEmoji + " | " + user.username;
+							const trojanRemark = "Tond| " + proxy.flagEmoji + " | " + user.username;
 							links.push('trojan://' + (user.uuid || '') + '@' + ip + ':' + portStr + '?path=' + proxy.currentDynPath + '&security=' + tlsVal + '&host=' + host + '&type=ws' + tlsParams + userFrag + '#' + encodeURIComponent(trojanRemark));
 						}
 					});
@@ -10292,11 +10290,11 @@ links.push('vle' + 'ss://' + (u.uuid || '') + '@0.0.0.0:1?encryption=none&securi
 						const tlsParams = isTlsPort ? ("&insecure=0&fp=" + fp + "&allowInsecure=0&sni=" + host) : "";
 
 						if (enableVless) {
-							const remark = "ZEUS | " + proxy.flagEmoji + " | " + u.username;
+							const remark = "Tond| " + proxy.flagEmoji + " | " + u.username;
 							links.push('vle' + 'ss://' + (u.uuid || '') + '@' + ip + ':' + portStr + '?path=' + proxy.currentDynPath + '&security=' + tlsVal + '&encryption=none&host=' + host + '&type=ws' + tlsParams + userFrag + '#' + encodeURIComponent(remark));
 						}
 						if (enableTrojan) {
-							const trojanRemark = "ZEUS | " + proxy.flagEmoji + " | " + u.username;
+							const trojanRemark = "Tond| " + proxy.flagEmoji + " | " + u.username;
 							links.push('trojan://' + (u.uuid || '') + '@' + ip + ':' + portStr + '?path=' + proxy.currentDynPath + '&security=' + tlsVal + '&host=' + host + '&type=ws' + tlsParams + userFrag + '#' + encodeURIComponent(trojanRemark));
 						}
 					});
